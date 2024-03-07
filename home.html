@@ -343,20 +343,24 @@
       </div>
       <!-- banner -->
       <div
-        class="flex justify-around items-center pt-0 min-h-[calc(100vh-200px)]"
+        class="flex justify-around items-center pt-0 min-h-[calc(100vh-170px)]"
       >
-        <div class="space-y-8 lg:space-y-10 p-4">
-          <div class="space-y-5">
-            <h3 class="font-bold text-7xl text-white text-center pb-7">
+        <div class="space-y-5 lg:space-y-10 p-4">
+          <div class="space-y-2 md:space-y-5 pt-8 md:pt-0">
+            <h3
+              class="font-bold text-5xl md:text-7xl text-white text-center pb-7"
+            >
               Learn to Code
             </h3>
-            <p class="font-bold text-2xl text-[#FFF4A3] text-center">
+            <p class="font-bold text-lg md:text-2xl text-[#FFF4A3] text-center">
               With the world's largest web developer site.
             </p>
           </div>
           <!-- search -->
 
-          <div class="flex items-center w-[35rem] bg-white rounded-full">
+          <div
+            class="flex justify-items-center justify-center w-60 md:w-[35rem] bg-white rounded-full ml-16 md:ml-0"
+          >
             <div class="w-full">
               <input
                 type="search"
@@ -367,7 +371,7 @@
             <div>
               <button
                 type="submit"
-                class="flex items-center bg-[#A435F0] justify-center w-28 h-10 text-white rounded-r-full"
+                class="flex items-center bg-[#A435F0] justify-center w-16 md:w-28 h-10 text-white rounded-r-full"
               >
                 <svg
                   class="w-5 h-5"
@@ -387,7 +391,9 @@
             </div>
           </div>
           <div>
-            <h3 class="font-bold text-2xl underline text-white text-center">
+            <h3
+              class="font-bold text-lg md:text-2xl underline text-white text-center"
+            >
               Not Sure Where To Begin?
             </h3>
           </div>
@@ -395,69 +401,191 @@
       </div>
     </header>
     <!-- image -->
-    <div class="relative">
+    <div class="relative bg-[#0D1721] pt-16 md:pt-0">
       <div class="w-full h-full relative top-0">
         <img class="w-full h-full" src="./images/frame.jpg" alt="" />
       </div>
     </div>
     <main class="bg-[#0D1721]">
       <!-- js example -->
-      <section class="container mx-auto">
-        <div class="flex pt-16 pb-32">
-          <div class="space-y-5 grid justify-center justify-items-center">
-            <h3 class="font-bold text-7xl text-white pb-4">JavaScript</h3>
-            <p class="font-normal text-lg text-white">
-              The language for programming web pages
-            </p>
-            <div>
-              <button
-                class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0]"
-              >
-                Learn JavaScript
-              </button>
+
+      <section class="bg-[#0D1721]">
+        <div class="container mx-auto pt-20 pb-36">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div
+              class="max-w-lg space-y-5 grid justify-center justify-items-center"
+            >
+              <h2 class="font-bold text-4xl lg:text-7xl text-white pb-4">
+                JavaScript
+              </h2>
+              <p class="font-normal text-lg text-white">
+                The language for programming web pages
+              </p>
+              <div>
+                <button
+                  class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500"
+                >
+                  Learn JavaScript
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="flex-1 w-full h-full">
-            <img
-              class="w-full h-full"
-              src="./images/javaScriptExamplel.jpg"
-              alt=""
-            />
+            <div class="mt-12 md:mt-0">
+              <img
+                src="./images/javaScriptExamplel.jpg"
+                alt=""
+                class="object-cover"
+              />
+            </div>
           </div>
         </div>
-        <section class="bg-gray-100">
-          <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-              <div class="max-w-lg">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                  About Us
-                </h2>
-                <p class="mt-4 text-gray-600 text-lg">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  quis eros at lacus feugiat hendrerit sed ut tortor.
-                  Suspendisse et magna quis elit efficitur consequat. Mauris
-                  eleifend velit a pretium iaculis. Donec sagittis velit et
-                  magna euismod, vel aliquet nulla malesuada. Nunc pharetra
-                  massa lectus, a fermentum arcu volutpat vel.
-                </p>
-                <div class="mt-8">
-                  <a
-                    href="#"
-                    class="text-blue-500 hover:text-blue-600 font-medium"
-                    >Learn more about us <span class="ml-2">&#8594;</span></a
-                  >
-                </div>
+      </section>
+      <!-- python example -->
+      <section class="bg-[#F3ECEA]">
+        <div class="container mx-auto pt-20 pb-36">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div
+              class="max-w-lg space-y-5 grid justify-center justify-items-center"
+            >
+              <h2 class="font-bold text-4xl lg:text-7xl text-black pb-4">
+                Python
+              </h2>
+              <p class="font-normal text-lg text-black">
+                A popular programming language
+              </p>
+              <div>
+                <button
+                  class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500"
+                >
+                  Learn Python
+                </button>
               </div>
-              <div class="mt-12 md:mt-0">
-                <img
-                  src="./images/javaScriptExamplel.jpg"
-                  alt=""
-                  class="object-cover"
-                />
+            </div>
+            <div class="mt-12 md:mt-0">
+              <img
+                src="./images/pythonExample.jpg"
+                alt=""
+                class="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- learn -->
+
+      <section class="container mx-auto bg-[#0D1721]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 pt-28 pb-36 px-5">
+          <div class="block bg-[#FFC0C7] rounded-lg lg:mr-5 px-10">
+            <!-- php -->
+            <div class="block w-full h-full rounded-xl p-4">
+              <div
+                class="max-w-lg space-y-5 grid justify-center justify-items-center"
+              >
+                <h2 class="font-bold text-3xl lg:text-5xl text-black pb-4 pt-5">
+                  PHP
+                </h2>
+                <p class="font-normal text-lg text-black">
+                  A web server programming language
+                </p>
+                <div class="pb-5">
+                  <button
+                    class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#0D1721]"
+                  >
+                    Learn PHP
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+
+          <div class="block bg-[#FFF4A3] rounded-lg lg:mr-5 px-10">
+            <!-- Java Script -->
+            <div class="block rounded-xl p-4">
+              <div
+                class="max-w-lg space-y-5 grid justify-center justify-items-center"
+              >
+                <h2 class="font-bold text-3xl lg:text-5xl text-black pb-4 pt-5">
+                  Java Script
+                </h2>
+                <p class="font-normal text-lg text-black">
+                  A JS library for developing web pages
+                </p>
+                <div class="pb-5">
+                  <button
+                    class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#0D1721]"
+                  >
+                    Learn jQuery
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block bg-[#F3ECEA] rounded-lg lg:mr-5 px-10">
+            <!-- Python -->
+            <div class="block w-full h-full rounded-xl p-4">
+              <div
+                class="max-w-lg space-y-5 grid justify-center justify-items-center"
+              >
+                <h2 class="font-bold text-3xl lg:text-5xl text-black pb-4 pt-5">
+                  Python
+                </h2>
+                <p class="font-normal text-lg text-black">
+                  A programming language
+                </p>
+                <div class="pb-5">
+                  <button
+                    class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#0D1721]"
+                  >
+                    Learn Java
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="block bg-[#D9EEE1] rounded-lg lg:mr-5 px-10">
+            <!-- C -->
+            <div class="block rounded-xl p-4">
+              <div
+                class="max-w-lg space-y-5 grid justify-center justify-items-center"
+              >
+                <h2 class="font-bold text-3xl lg:text-5xl text-black pb-4 pt-5">
+                  C
+                </h2>
+                <p class="font-normal text-lg text-black">
+                  A programming language
+                </p>
+                <div class="pb-5">
+                  <button
+                    class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#0D1721]"
+                  >
+                    Learn C
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid items-center justify-center mt-10 py-16">
+          <div class="space-y-5 py-10">
+            <h3 class="font-bold text-6xl text-white text-center">
+              Code Editor
+            </h3>
+            <p class="font-normal text-xl text-white text-center">
+              With our online code editor, you can edit code and view the result
+              in your browser
+            </p>
+          </div>
+          <div>
+            <img src="./images/editor.jpg" alt="" />
+            <div class="mt-5 w-96 rounded-lg mb-10">
+              <h3 class="bg-[#FFF4A3] font-normal text-lg p-2 text-center">
+                Try Backend Editor (Python/PHP/Java/C..)
+              </h3>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- footer -->
