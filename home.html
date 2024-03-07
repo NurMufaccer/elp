@@ -18,7 +18,7 @@
     />
 
     <script>
-      tailwind.config = {
+      const tailwind = {
         theme: {
           extend: {
             colors: {
@@ -28,6 +28,33 @@
         },
       };
     </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .chartMenu {
+        width: 100vw;
+        height: 40px;
+      }
+      .chartMenu p {
+        padding: 10px;
+        font-size: 20px;
+      }
+      .chartCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chartBox {
+        width: 700px;
+        padding: 20px;
+        border-radius: 20px;
+
+        background: white;
+      }
+    </style>
   </head>
   <body>
     <header class="w-full bg-[#0D1721] min-h-[calc(100vh-200px)]">
@@ -567,7 +594,7 @@
             </div>
           </div>
         </div>
-        <div class="grid items-center justify-center mt-10 py-16">
+        <div class="grid items-center justify-center mt-10 py-16 px-5">
           <div class="space-y-5 py-10">
             <h3 class="font-bold text-6xl text-white text-center">
               Code Editor
@@ -577,17 +604,182 @@
               in your browser
             </p>
           </div>
-          <div>
+          <div class="px-5">
             <img src="./images/editor.jpg" alt="" />
-            <div class="mt-5 w-96 rounded-lg mb-10">
-              <h3 class="bg-[#FFF4A3] font-normal text-lg p-2 text-center">
+            <div class="mt-5 w-[20rem] md:w-96 rounded-lg mb-10">
+              <h3
+                class="bg-[#FFF4A3] font-normal text-base md:text-lg p-2 text-center"
+              >
                 Try Backend Editor (Python/PHP/Java/C..)
               </h3>
             </div>
           </div>
         </div>
       </section>
+      <!-- my learning -->
+      <section class="bg-[#D9EEE1]">
+        <div class="container mx-auto">
+          <h3
+            class="font-bold text-6xl text-center pt-10 md:pt-20 pb-12 text-black"
+          >
+            My Learning
+          </h3>
+          <p class="font-bold text-xl text-center text-black pb-5">
+            Track your progress with our free "My Learning" program.
+          </p>
+          <p class="font-bold text-xl text-center text-black pb-10">
+            Log in to your account, and start earning points!
+          </p>
+          <!-- browse -->
+          <div class="relative flex md:flex-col justify-center p-10 lg:p-36">
+            <div
+              class="rounded-lg border shadow-md flex flex-col px-10 py-14 bg-white"
+            >
+              <h3 class="font-bold text-3xl pb-4">Hi, Liam</h3>
+              <p class="font-normal text-xl text-gray-600 w-full xl:w-7/12">
+                Welcome to the new "My learning hear at W3school.This willbe
+                your hub to all the tutorials we offer and your learning
+                prograss.
+              </p>
+              <p class="font-normal text-xl text-gray-600 pt-3">
+                We hope you will continue to learn with us.
+              </p>
+
+              <div class="pt-10 flex flex-col lg:flex-row">
+                <button
+                  class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#0D1721]"
+                >
+                  Continue"Learn C++""
+                </button>
+                <button
+                  class="px-10 py-2 rounded-3xl text-base font-medium text-black"
+                >
+                  Browse tutorials
+                </button>
+              </div>
+            </div>
+            <!-- Progress -->
+            <div
+              class="absolute top-[43rem] md:top-[30rem] lg:top-3 right-10 md:right-44 flex items-center justify-center"
+            >
+              <card
+                class="w-80 md:w-96 rounded-lg border shadow-md flex flex-col p-5 bg-white"
+              >
+                <!-- Top Section -->
+                <div class="relative my-5 flex flex-col items-center">
+                  <div class="absolute">
+                    <h3 class="text-3xl font-bold text-black text-center">
+                      Good Job!
+                    </h3>
+                    <p class="pt-3 text-xl font-normal text-black text-center">
+                      Your Score
+                    </p>
+                  </div>
+                </div>
+                <!-- donut chart -->
+                <div class="flex justify-center items-center top-0">
+                  <div class="w-60 md:w-72 bg-white">
+                    <div class="">
+                      <canvas id="myChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div
+                    class="absolute -top-32 lg:-top-36 left-20 md:left-28 lg:left-24"
+                  >
+                    <h3 class="font-bold text-5xl lg:text-7xl text-center">
+                      2297
+                    </h3>
+                    <p class="font-bold text-xl text-center">Points</p>
+                  </div>
+                </div>
+                <!-- Bottom Section -->
+                <div class="mx-auto">
+                  <div class="relative isolate overflow-hidden bg-white">
+                    <div
+                      class="flex w-full flex-wrap items-center justify-between gap-4 pb-5 lg:flex-nowrap"
+                    >
+                      <div class="lg:max-w-xl">
+                        <h2 class="block w-full pb-2 font-normal text-lg">
+                          Score factor
+                        </h2>
+                        <div
+                          class="grid grid-cols-2 gap-4 justify-center text-lg"
+                        >
+                          <div
+                            href="#"
+                            class="bg-white border flex-grow text-black rounded-md w-full"
+                          >
+                            <div
+                              class="border-r-8 border-[#D9EEE1] rounded-md pl-2 pr-9 py-2"
+                            >
+                              <h3 class="font-bold text-xl">755</h3>
+                              <p class="text-gray-500 font-normal text-sm">
+                                lesson read
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            href="#"
+                            class="bg-white border flex-grow text-black rounded-md w-full"
+                          >
+                            <div
+                              class="border-r-8 border-white pl-2 pr-9 py-2 rounded-md"
+                            >
+                              <h3 class="font-bold text-xl">15</h3>
+                              <p class="text-gray-500 font-normal text-sm">
+                                stars collected
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            href="#"
+                            class="bg-white border flex-grow text-black rounded-md w-full"
+                          >
+                            <div
+                              class="border-r-8 border-green-500 pl-2 pr-9 py-2 rounded-md"
+                            >
+                              <h3 class="font-bold text-xl">948</h3>
+                              <p class="text-gray-500 font-normal text-sm">
+                                quiz points
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            href="#"
+                            class="bg-white border flex-grow text-black rounded-md w-full"
+                          >
+                            <div
+                              class="border-r-8 border-[#FFF4A3] rounded-md pl-2 pr-9 py-2"
+                            >
+                              <h3 class="font-bold text-xl">594</h3>
+                              <p class="text-gray-500 font-normal text-sm">
+                                exercise points
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </card>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="grid justify-center pt-[45rem] lg:pt-0 pb-24">
+            <button
+              class="px-24 py-4 rounded-full text-xl font-normal text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500"
+            >
+              Sign Up for Free
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+
     <!-- footer -->
     <footer class="mt-16">
       <div class="flex items-center md:justify-between justify-center">
@@ -624,5 +816,45 @@
         </div>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"
+    ></script>
+    <script>
+      // setup
+      const data = {
+        datasets: [
+          {
+            data: [775, 948, 594],
+            backgroundColor: [
+              "rgba(217, 238, 225, 1)",
+
+              "rgba(34, 197, 94, 1)",
+              "rgba(255, 244, 163, 1)",
+            ],
+            borderColor: "white",
+            borderWidth: 4,
+            cutout: "87%",
+            circumference: 180,
+            rotation: 270,
+            borderRadius: 5,
+          },
+        ],
+      };
+
+      // config
+      const config = {
+        type: "doughnut",
+        data,
+        options: {},
+      };
+
+      // render init block
+      const myChart = new Chart(document.getElementById("myChart"), config);
+
+      // Instantly assign Chart.js version
+      const chartVersion = document.getElementById("chartVersion");
+      chartVersion.innerText = Chart.version;
+    </script>
   </body>
 </html>
