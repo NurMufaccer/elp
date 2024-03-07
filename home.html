@@ -30,7 +30,7 @@
     </script>
   </head>
   <body>
-    <header class="w-full bg-[#0D1721] min-h-screen">
+    <header class="w-full bg-[#0D1721] min-h-[calc(100vh-200px)]">
       <!-- navbar -->
       <div class="navbar fixed top-0 z-30 w-full px-2 py-2 bg-[#0D1721]">
         <div class="navbar-start">
@@ -284,27 +284,31 @@
           </div>
         </div>
         <div class="navbar-end">
-          <div class="mr-60">
-            <h3
-              class="text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent"
-            >
-              Teach on ELC
-            </h3>
-          </div>
-          <div class="relative">
-            <div class="absolute z-40 -top-5 -left-52 right-0">
+          <div class="grid grid-cols-3 items-center justify-center pr-3">
+            <div class="">
               <button
-                class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0]"
+                class="text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent"
               >
-                Sign Up
+                Teach on ELC
               </button>
             </div>
-            <div class="absolute z-10 -top-5 -left-32 right-0 ml-px">
-              <button
-                class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-black transition-all duration-300 bg-[#D9EEE1]"
-              >
-                Log in
-              </button>
+            <div class="relative">
+              <div class="absolute z-10 -top-5 left-5 right-0 ml-1.5">
+                <button
+                  class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0]"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+            <div class="">
+              <div class="z-0">
+                <button
+                  class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-black transition-all duration-300 bg-[#D9EEE1]"
+                >
+                  Log in
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -339,11 +343,11 @@
       </div>
       <!-- banner -->
       <div
-        class="flex flex-col-reverse lg:flex-row justify-around items-center pt-5 min-h-[calc(100vh-200px)]"
+        class="flex justify-around items-center pt-0 min-h-[calc(100vh-200px)]"
       >
-        <div class="space-y-8 p-4">
+        <div class="space-y-8 lg:space-y-10 p-4">
           <div class="space-y-5">
-            <h3 class="font-bold text-7xl text-white text-center">
+            <h3 class="font-bold text-7xl text-white text-center pb-7">
               Learn to Code
             </h3>
             <p class="font-bold text-2xl text-[#FFF4A3] text-center">
@@ -389,11 +393,40 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-full">
-        <img class="w-full h-full" src="./images/Frame.png" alt="" />
-      </div>
     </header>
-    <main class="container mx-auto py-10 px-4"></main>
+    <!-- image -->
+    <div class="relative">
+      <div class="w-full h-full relative top-0">
+        <img class="w-full h-full" src="./images/frame.jpg" alt="" />
+      </div>
+    </div>
+    <main class="bg-[#0D1721]">
+      <!-- js example -->
+      <section class="container mx-auto">
+        <div class="flex pt-16 pb-32">
+          <div class="space-y-5 grid justify-center justify-items-center">
+            <h3 class="font-bold text-7xl text-white pb-4">JavaScript</h3>
+            <p class="font-normal text-lg text-white">
+              The language for programming web pages
+            </p>
+            <div>
+              <button
+                class="px-10 py-2 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0]"
+              >
+                Learn JavaScript
+              </button>
+            </div>
+          </div>
+          <div class="flex-1 w-full h-full">
+            <img
+              class="w-full h-full"
+              src="./images/javaScriptExamplel.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- footer -->
     <footer class="mt-16">
       <div class="flex items-center md:justify-between justify-center">
