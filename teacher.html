@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Last</title>
+        <!-- tailwind -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+        <script>
+            const tailwind = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .bgColor {
+                background: linear-gradient(90deg,
+                        #282a35 0%,
+                        #282a35 20%,
+                        #000000 20%,
+                        #000000 75%,
+                        #282a35 75%,
+                        #282a35 100%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- page -->
+        <main class="min-h-screen w-full bg-gray-100 text-gray-700" x-data="layout">
+            <!-- header page -->
+            <header class="px-7 flex w-full items-center justify-end border-b-2 border-gray-200 bg-white p-2">
+                <!-- button profile -->
+                <div class="flex justify-center items-center gap-5">
+                    <div class="">
+                        <h3 class="font-normal text-base">Student</h3>
+                    </div>
+                    <div class="relative">
+                        <!-- User Avatar -->
+                        <div class="w-9 h-9 flex items-center justify-center bg-[#2D2F31] rounded-full">
+                            <h3 class="font-bold text-sm text-white">K</h3>
+                        </div>
+
+                        <!-- Online Status Dot -->
+                        <div class="absolute right-0 -top-1 h-4 w-4 rounded-full bg-[#A435F0]" title="User is online">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="flex">
+                <!-- aside -->
+                <aside class="flex-col space-y-2 bg-[#2D2F31] inline-block" x-show="asideOpen">
+                    <div class="flex w-10 lg:w-12 items-center justify-center border-l-4 border-[#A435F0] my-4">
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3">
+                            <img class="pr-1" src="./images/playDisplay.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="flex w-full items-center justify-center">
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 pb-3">
+                            <img class="pr-1" src="./images/chart.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center my-4">
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3">
+                            <img class="pr-1" src="./images/setting.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center my-4">
+                        <a href="#" class="flex items-center space-x-1 rounded-md px-2 py-3">
+                            <img class="pr-1" src="./images/faq.svg" alt="" />
+                        </a>
+                    </div>
+                </aside>
+
+                <!-- main content page -->
+                <section class="container mx-auto p-4 bg-[#F5F5F5]">
+                    <!-- 1 -->
+                    <div
+                        class="w-11/12 mt-6 md:mt-10 lg:mt-16 mx-5 lg:mx-16 bg-[#F5F5F5] border-2 shadow-xl rounded-lg py-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8 flex flex-col md:flex-row gap-6 items-center justify-between">
+                        <h2 class="text-base font-normal tracking-tight text-neutral-900">
+                            <span class="block">Jump Into Course Creation</span>
+                        </h2>
+                        <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
+                            <a href="#"
+                                class="w-full flex items-center justify-center px-6 md:px-10 lg:px-20 py-2 border border-transparent rounded-none text-sm md:text-lg font-semibold text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500">Create
+                                Your Course
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="font-normal text-base text-black text-center py-10 md:py-14 lg:py-20">
+                        Based on your experience, we think these resources will be helpful.
+                    </h3>
+                    <!-- 2 -->
+                    <div
+                        class="flex flex-col lg:flex-row w-11/12 mx-5 lg:mx-16 bg-[#F5F5F5] border-2 shadow-xl rounded-lg py-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8 gap-6 items-center justify-between">
+                        <div class="w-2/5 flex items-center justify-center">
+                            <img src="./images/image1.jpg" alt="" />
+                        </div>
+                        <div class="w-full lg:w-3/5 space-y-4">
+                            <h3 class="font-normal text-xl md:text-2xl text-black text-center lg:text-start">
+                                Create an Engaging Course
+                            </h3>
+                            <p class="font-normal text-sm md:text-base text-black pt-3 text-center lg:text-start">
+                                Whether you've been teaching for years or are teaching for the
+                                first time, you can make an engaging course. We've compiled
+                                resources and best practices to help you get to the next level,
+                                no matter where you're starting.
+                            </p>
+                            <p
+                                class="font-normal text-sm md:text-base text-[#5624D0] underline pt-2 text-center lg:text-start">
+                                Get Started
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div
+                        class="flex flex-col md:flex-row my-6 w-11/12 mx-5 lg:mx-16 bg-[#F5F5F5] lg:max-w-7xl gap-6 items-center justify-between">
+                        <!-- 3.1 -->
+                        <div
+                            class="flex flex-col lg:flex-row w-11/12 bg-[#F5F5F5] border-2 shadow-xl rounded-lg py-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8 gap-5 lg:gap-2 items-center justify-between">
+                            <div class="w-2/5 flex items-center justify-center">
+                                <img src="./images/image2.jpg" alt="" />
+                            </div>
+                            <div class="w-full lg:w-3/5 space-y-4">
+                                <h3 class="font-normal text-xl text-black text-center lg:text-start">
+                                    Get Started with Video
+                                </h3>
+                                <p class="font-normal text-sm text-black pt-3 text-center lg:text-start">
+                                    Quality video lectures can set your course apart. Use our
+                                    resources to learn the basics.
+                                </p>
+                                <p class="font-normal text-sm text-[#5624D0] underline pt-2 text-center lg:text-start">
+                                    Get Started
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 3.2 -->
+                        <div
+                            class="flex flex-col lg:flex-row w-11/12 bg-[#F5F5F5] border-2 shadow-xl rounded-lg py-14 lg:py-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8 gap-5 lg:gap-2 items-center justify-between">
+                            <div class="w-2/5 flex items-center justify-center">
+                                <img src="./images/image3.jpg" alt="" />
+                            </div>
+                            <div class="w-full lg:w-3/5 space-y-4">
+                                <h3 class="font-normal text-xl text-black text-center lg:text-start">
+                                    Build Your Audience
+                                </h3>
+                                <p class="font-normal text-sm text-black pt-3 text-center lg:text-start">
+                                    Set your course up for success by building your audience.
+                                </p>
+                                <p class="font-normal text-sm text-[#5624D0] underline pt-2 text-center lg:text-start">
+                                    Get Started
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div
+                        class="flex flex-col lg:flex-row w-11/12 mx-5 lg:mx-16 bg-[#F5F5F5] border-2 shadow-xl rounded-lg py-12 px-4 sm:px-6 lg:max-w-7xl lg:px-8 gap-6 items-center justify-between">
+                        <div class="w-2/5 flex items-center justify-center">
+                            <img src="./images/image4.jpg" alt="" />
+                        </div>
+                        <div class="w-full lg:w-3/5 space-y-4">
+                            <h3 class="font-normal text-xl md:text-2xl text-black text-center lg:text-start">
+                                Join the New Instructor Challenge!
+                            </h3>
+                            <p class="font-normal text-sm md:text-base text-black pt-3 text-center lg:text-start">
+                                Get exclusive tips and resources designed to help you launch
+                                your first course faster! Eligible instructors who publish their
+                                first course on time will receive a special bonus to celebrate.
+                                Start today!
+                            </p>
+                            <p
+                                class="font-normal text-sm md:text-base text-[#5624D0] underline pt-2 text-center lg:text-start">
+                                Get Started
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid justify-center my-36 space-y-7 pb-10">
+                        <h3 class="font-normal text-base text-black text-center">
+                            Are You Ready to Begin?
+                        </h3>
+                        <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
+                            <a href="#"
+                                class="w-full flex items-center justify-center px-6 md:px-10 lg:px-20 py-2 border border-transparent rounded-none text-sm md:text-lg font-semibold text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500">Create
+                                Your Course
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- footer -->
+
+        <div class="bg-[#1D2A35]">
+            <footer class="container mx-auto px-20 py-12">
+                <div class="md:flex flex-col lg:flex-row gap-10 lg:gap-40">
+                    <div class="mb-6 md:mb-0">
+                        <a href="#" target="_blank" class="flex items-center">
+                            <img src="./images/elpLogo.png" class="mr-3 w-14" alt="Logo" />
+                            <span
+                                class="self-center text-xl font-normal whitespace-nowrap text-[#FFF4A3] pl-5 md:pl-10">NEWSLETTER</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-10 lg:gap-40">
+                        <div>
+                            <h3 class="mb-5 text-lg font-normal text-[#DDDDDD]">
+                                Top Tutorials
+                            </h3>
+                            <ul>
+                                <li class="mb-0.5">
+                                    <a href="#" target="_blank"
+                                        class="text-[#DDDDDD] hover:underline text-xs font-normal">C Tutorial
+                                    </a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="#" target="_blank"
+                                        class="text-[#DDDDDD] hover:underline text-xs font-normal">JavaScript Tutorial
+                                    </a>
+                                </li>
+                                <li class="mb-0.5">
+                                    <a href="#" target="_blank"
+                                        class="text-[#DDDDDD] hover:underline text-xs font-normal">SQL Tutorial
+                                    </a>
+                                </li>
+                                <li class="mb-0.5">
+                                    <a href="#" target="_blank"
+                                        class="text-[#DDDDDD] hover:underline text-xs font-normal">Python Tutorial
+                                    </a>
+                                </li>
+                                <li class="mb-0.5">
+                                    <a href="#" target="_blank"
+                                        class="text-[#DDDDDD] hover:underline text-xs font-normal">PHP Tutorial
+                                    </a>
+                                </li>
+                                <li class="mb-0.5">
+                                    <a href="#" target="_blank"
+                                        class="text-[#DDDDDD] hover:underline text-xs font-normal">Java Tutorial</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="col-span-2 flex flex-wrap mt-4 space-x-6 items-center justify-center sm:mt-0 gap-3 md:gap-0">
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" aria-hidden="true"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <img src="./images/Icon.svg" alt="" />
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" aria-hidden="true"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" aria-hidden="true"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-[#DDDDDD] font-normal text-base">
+                                FORUM
+                            </a>
+
+                            <a href="#" class="text-[#DDDDDD] font-normal text-base">
+                                ABOUT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <h3 class="font-normal text-xs text-white py-6 px-10 lg:px-20">
+                © 2024 ELC, Inc.
+            </h3>
+        </div>
+
+        <script>
+            document.addEventListener("alpine:init", () => {
+                Alpine.data("layout", () => ({
+                    profileOpen: false,
+                    asideOpen: true,
+                }));
+            });
+        </script>
+    </body>
+
+</html>

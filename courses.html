@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Courses</title>
+    <title>ELP Course Page</title>
     <!-- tailwind -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <script>
       const tailwind = {
@@ -29,48 +25,31 @@
       };
     </script>
   </head>
+  <!-- font roboto -->
+
   <body>
-    <header class="w-full bg-[#0D1721]">
+    <header class="w-full min-h-[calc(100vh-200px)]">
       <!-- navbar -->
       <div class="navbar fixed top-0 z-30 w-full px-2 py-2 bg-[#0D1721]">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md opacity-0 invisible group-hover:opacity-100 z-[1] p-2 shadow bg-base-100 rounded-box w-56"
-            >
+            <ul tabindex="0"
+              class="dropdown-content mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md opacity-0 invisible group-hover:opacity-100 z-[1] p-2 shadow bg-base-100 rounded-box w-56">
               <!-- dropdown Services -->
               <li>
                 <div class="relative inline-block text-left">
                   <div class="group">
-                    <button
-                      type="button"
-                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-black dark:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:dark:hover:text-white dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                    >
+                    <button type="button"
+                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-black dark:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:dark:hover:text-white dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
                       Tutorials
                       <!-- Dropdown arrow -->
-                      <svg
-                        class="w-4 h-4 ml-2 -mr-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
+                      <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
                         <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
                       </svg>
                     </button>
@@ -83,18 +62,12 @@
               <li>
                 <div class="text-left">
                   <div class="group">
-                    <button
-                      type="button"
-                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-black dark:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:dark:hover:text-white dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                    >
+                    <button type="button"
+                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-black dark:text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 lg:dark:hover:text-white dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
                       Exercises
                       <!-- Dropdown arrow -->
-                      <svg
-                        class="w-4 h-4 ml-2 -mr-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
+                      <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
                         <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
                       </svg>
                     </button>
@@ -105,22 +78,16 @@
               </li>
 
               <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 text-black dark:text-white hover:bg-gray-100"
-                  >Teach on ELC</a
-                >
+                <a href="#" class="block px-4 py-2 text-black dark:text-white hover:bg-gray-100">Teach on ELC</a>
               </li>
               <li>
                 <div class="flex gap-3 p-2">
                   <button
-                    class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0]"
-                  >
+                    class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-white transition-all duration-300 bg-[#A435F0]">
                     Sign Up
                   </button>
                   <button
-                    class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-black transition-all duration-300 bg-[#D9EEE1]"
-                  >
+                    class="px-4 py-2 w-28 rounded-3xl text-base font-normal text-black transition-all duration-300 bg-[#D9EEE1]">
                     Log in
                   </button>
                 </div>
@@ -137,29 +104,19 @@
               </button>
             </div>
           </a>
-          <div
-            class="hidden lg:visible items-center justify-between w-full lg:flex lg:w-auto lg:order-1 pl-2"
-            id="mobile-menu-2"
-          >
-            <ul
-              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
-            >
+          <div class="hidden lg:visible items-center justify-between w-full lg:flex lg:w-auto lg:order-1 pl-2"
+            id="mobile-menu-2">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <!-- dropdown Services -->
               <li>
                 <div class="relative inline-block text-left">
                   <div class="group">
-                    <button
-                      type="button"
-                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0"
-                    >
+                    <button type="button"
+                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0">
                       Tutorials
                       <!-- Dropdown arrow -->
-                      <svg
-                        class="w-4 h-4 ml-1 mt-1 -mr-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
+                      <svg class="w-4 h-4 ml-1 mt-1 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
                         <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
                       </svg>
                     </button>
@@ -172,18 +129,12 @@
               <li>
                 <div class="relative inline-block text-left">
                   <div class="group">
-                    <button
-                      type="button"
-                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0"
-                    >
+                    <button type="button"
+                      class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent lg:border-0 lg:p-0">
                       Exercises
                       <!-- Dropdown arrow -->
-                      <svg
-                        class="w-4 h-4 ml-1 mt-1 -mr-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
+                      <svg class="w-4 h-4 ml-1 mt-1 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor">
                         <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
                       </svg>
                     </button>
@@ -199,30 +150,15 @@
           <!-- search -->
 
           <div class="relative mx-auto text-[#757575]">
-            <input
-              class="bg-white italic h-10 px-5 pr-16 rounded-full text-base focus:outline-none"
-              type="search"
-              name="search"
-              placeholder="Search..."
-            />
+            <input class="bg-white italic h-10 px-5 pr-16 rounded-full text-base focus:outline-none" type="search"
+              name="search" placeholder="Search..." />
             <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
-              <svg
-                class="text-black h-4 w-4 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                id="Capa_1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 56.966 56.966"
-                style="enable-background: new 0 0 56.966 56.966"
-                xml:space="preserve"
-                width="512px"
-                height="512px"
-              >
+              <svg class="text-black h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                viewBox="0 0 56.966 56.966" style="enable-background: new 0 0 56.966 56.966" xml:space="preserve"
+                width="512px" height="512px">
                 <path
-                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
-                />
+                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
               </svg>
             </button>
           </div>
@@ -230,9 +166,7 @@
         <div class="navbar-end">
           <div class="grid grid-cols-2 items-center justify-center gap-10">
             <div class="hidden lg:block">
-              <button
-                class="text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent"
-              >
+              <button class="text-base font-normal text-[#DDDDDD] dark:text-white lg:hover:bg-transparent">
                 Teach on ELC
               </button>
             </div>
@@ -241,11 +175,7 @@
                 <div class="inline-block">
                   <button type="button" class="transform hover:scale-110">
                     <div>
-                      <img
-                        class="w-10 md:w-12"
-                        src="./images/kobeB.png"
-                        alt=""
-                      />
+                      <img class="w-10 md:w-12" src="./images/kobeB.png" alt="" />
                     </div>
                   </button>
                 </div>
@@ -253,909 +183,844 @@
             </div>
           </div>
           <div class="relative pr-3 text-[#757575] block lg:hidden">
-            <input
-              class="bg-white italic h-8 md:h-10 px-5 pr-3 md:pr-16 rounded-full text-base focus:outline-none"
-              type="search"
-              name="search"
-              placeholder="Search..."
-            />
-            <button
-              type="submit"
-              class="absolute right-0 -top-1 md:top-0 mt-3 mr-5"
-            >
-              <svg
-                class="text-black h-4 w-4 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                id="Capa_1"
-                x="0px"
-                y="0px"
-                viewBox="0 0 56.966 56.966"
-                style="enable-background: new 0 0 56.966 56.966"
-                xml:space="preserve"
-                width="512px"
-                height="512px"
-              >
+            <input class="bg-white italic h-8 md:h-10 px-5 pr-3 md:pr-16 rounded-full text-base focus:outline-none"
+              type="search" name="search" placeholder="Search..." />
+            <button type="submit" class="absolute right-0 -top-1 md:top-0 mt-3 mr-5">
+              <svg class="text-black h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                viewBox="0 0 56.966 56.966" style="enable-background: new 0 0 56.966 56.966" xml:space="preserve"
+                width="512px" height="512px">
                 <path
-                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
-                />
+                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
               </svg>
             </button>
           </div>
         </div>
       </div>
-
       <!-- banner -->
-    </header>
-    <main>
-      <section class="container mx-auto mt-48 p-5 lg:p-8">
-        <h3 class="font-bold text-4xl text-black dark:text-white pb-8">
-          Our Courses
-        </h3>
-        <p class="font-bold text-2xl text-black dark:text-white">
-          All Development courses
-        </p>
-        <div class="flex gap-7 mt-5">
-          <div
-            class="flex p-4 border-2 shadow-lg w-24 items-center justify-center"
-          >
-            <img src="./images/svg.svg" alt="" />
-            <h3 class="font-bold text-base text-black dark:text-white pl-2">
-              Filter
-            </h3>
-          </div>
-          <div
-            class="flex p-4 border-2 shadow-lg w-56 justify-between items-center"
-          >
-            <div>
-              <h3 class="font-bold text-sm text-black dark:text-white">
-                Sort by
+      <div class="bg-white xl:bg-[#2D2F31]">
+        <div
+          class="container mx-auto flex frex flex-col-reverse xl:flex-row justify-start px-3 md:px-10 lg:px-48 xl:px-8 mt-20 xl:mt-14 items-center pb-0 min-h-[calc(100vh-270px)]">
+          <div class="w-full xl:w-3/5 grid space-y-5 lg:space-y-10 p-4 ml-0 xl:ml-5">
+            <div class="space-y-1 md:space-y-3 pt-8 md:pt-0">
+              <h3 class="font-bold text-2xl md:text-4xl text-black xl:text-white dark:text-white pb-1">
+                100 Days of Code: The Complete Python Pro Bootcamp
               </h3>
-              <h3 class="font-normal text-base text-black dark:text-white">
-                Most Popular
-              </h3>
-            </div>
-            <div>
-              <img src="./images/arrow.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container mx-auto grid justify-center mt-6 md:mt-10 p-5">
-        <div>
-          <!-- course-1 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course1.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-56">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  The Complete 2024 Web Development Bootcamp
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  Become a Full-Stack Web Developer with just ONE course. HTML,
-                  CSS, <br />Javascript, Node, React, PostgreSQL, Web3 and DApps
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Dr. Angela Yu
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    375 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
+              <p class="font-normal text-lg md:text-xl text-black xl:text-white dark:text-white">
+                Master Python by building 100 projects in 100 days. Learn data
+                science, automation, build websites, games and apps!
+              </p>
+              <p class="font-normal text-xs md:text-sm text-black xl:text-white dark:text-white pt-5">
+                1,159,467 students
+              </p>
+              <p class="font-normal text-xs md:text-sm text-black xl:text-white dark:text-white">
+                Created by
+                <span class="font-normal text-xs md:text-sm text-blue-400 xl:text-[#C0C4FC] underline">
+                  Dr. Angela Yu</span>
+              </p>
+              <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex gap-1 lg:gap-2">
+                  <img class="bg-black xl:bg-[#2D2F31]" src="./images/ex.svg" alt="" />
+                  <h3 class="font-normal text-xs md:text-sm text-black xl:text-white dark:text-white text-center">
+                    Last updated 1/2024
                   </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+                </div>
+                <div class="flex gap-1 xl:gap-2">
+                  <img class="bg-black xl:bg-[#2D2F31]" src="./images/earth.svg" alt="" />
+                  <h3 class="font-normal text-xs md:text-sm text-black xl:text-white dark:text-white text-center">
+                    Last updated 1/2024
+                  </h3>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
+            <div class="block xl:hidden">
+              <div class="flex items-center py-6">
+                <h2 class="font-bold text-3xl text-black dark:text-white">
+                  100
+                </h2>
+                <img class="w-5" src="./images/money2.svg" alt="" />
+              </div>
 
-          <!-- course-2 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course2.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-44">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  The Web Developer Bootcamp 2024
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  10 Hours of React just added. Become a Developer With ONE
-                  course - HTML,
-                  <br />CSS, JavaScript, React, Node, MongoDB and More!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Colt Steele
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    723 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
+              <div class="w-full">
+                <button
+                  class="w-full text-lg font-semibold text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500 py-3">
+                  Get now
+                </button>
+                <div class="px-2 py-3 space-y-1">
+                  <h3 class="font-bold text-lg text-black dark:text-white">
+                    This course includes:
                   </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+                  <div class="flex gap-2 items-center">
+                    <img src="./images/play.svg" alt="" />
+                    <h3 class="font-normal text-base">
+                      54 hours on-demand video
+                    </h3>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                    <i class="text-lg fa-solid fa-clipboard-list"></i>
+                    <h3 class="font-normal text-base">222 Assignment</h3>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-3 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course3.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-48">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  The Complete JavaScript Course 2024: From Zero to Expert!
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  The modern JavaScript course for everyone! Master JavaScript
-                  with projects,
-                  <br />challenges and theory. Many courses in one!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Jonas Schmedtmann
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    321 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
+          <!-- intro -->
+          <div class="block xl:relative w-full xl:w-0">
+            <div class="block xl:absolute -top-28 left-10 w-full xl:w-96 bg-base-100 border-none rounded-none">
+              <figure>
+                <img class="w-full h-full" src="./images/course1.jpg" alt="Shoes" />
+              </figure>
+              <div class="hidden xl:block border shadow-lg">
+                <div class="flex items-center py-6 px-2">
+                  <h2 class="font-bold text-3xl text-black dark:text-white">
                     100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+                  </h2>
+                  <img class="w-5" src="./images/money2.svg" alt="" />
+                </div>
+
+                <div class="w-full">
+                  <button
+                    class="w-full text-lg font-semibold text-white transition-all duration-300 bg-[#A435F0] hover:bg-purple-500 py-3">
+                    Get now
+                  </button>
+                  <div class="px-2 py-3 space-y-1">
+                    <h3 class="font-bold text-lg text-black dark:text-white">
+                      This course includes:
+                    </h3>
+                    <div class="flex gap-2 items-center">
+                      <img src="./images/play.svg" alt="" />
+                      <h3 class="font-normal text-base">
+                        54 hours on-demand video
+                      </h3>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                      <i class="text-lg fa-solid fa-clipboard-list"></i>
+                      <h3 class="font-normal text-base">222 Assignment</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-4 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course4.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-48">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  The Complete Web Developer Course 3.0
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  Learn Web Development in 2023! Build apps, website, projects
-                  using HTML,
-                  <br />CSS, Javascript, PHP, Python, MySQL & more!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Rob Percival, Codestars
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    221 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <!-- collapse -->
+      <section class="px-3 md:px-8 lg:px-40 xl:px-0 ml-0 xl:ml-20">
+        <div class="space-y-6 pb-3 w-96">
+          <h3 class="font-bold text-xl md:text-2xl text-black dark:text-white">
+            Course content
+          </h3>
+          <p class="font-normal text-sm text-black dark:text-white">
+            101 sections • 636 lectures
+          </p>
+        </div>
+        <!-- collapse -->
+        <div id="accordion-collapse" data-accordion="collapse" class="w-full xl:w-3/5 rounded-none">
+          <!-- h1 -->
+          <h2 id="accordion-collapse-heading-1">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+              aria-controls="accordion-collapse-body-1">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3 md:h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 1 - Beginner - Working with Variables in
+                  Python to Manage
+                  Data?</span>
               </div>
+              <p class="font-normal text-xs md:text-sm">17 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+            <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+              <ul class="w-full">
+                <li class="pb-2 pt-3">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#5624D0] truncate dark:text-white underline">
+                        What you're going to get from this course
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      03:27
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#5624D0] truncate dark:text-white underline">
+                        Start Here
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      02:53
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#5624D0] truncate dark:text-white underline">
+                        Downloadable Resources and Tips for Taking the Course
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      04:22
+                    </div>
+                  </div>
+                </li>
+
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Day 1 Goals: what we will make by the end of the day
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      02:30
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/faq.jpg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        FAQ: Can I Use PyCharm/VSCode/ Another Local Code
+                        Editor?
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      00:53
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Printing to the Console in Python
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      09:28
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Join our Class on Auditorium
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      09:28
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        [Interactive Coding Exercise] Printing
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      04:27
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        String Manipulation and Code Intelligence
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      09:46
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        [Interactive Coding Exercise] Debugging Practice
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      03:53
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        The Python Input Function
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      08:49
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        [Interactive Coding Exercise] Input Function
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      02:56
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Python Variables
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      06:43
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        [Interactive Coding Exercise] Variables
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      03:00
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Variable Naming
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      03:58
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Day 1 Project: Band Name Generator
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      05:49
+                    </div>
+                  </div>
+                </li>
+                <li class="pb-2">
+                  <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                    <div class="flex-shrink-0">
+                      <img class="" src="./images/play.svg" alt="" />
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="text-xs md:text-sm font-normal text-[#2D2F31] truncate dark:text-white">
+                        Congratulations! Well done!
+                      </p>
+                    </div>
+                    <div
+                      class="inline-flex items-center text-xs md:text-sm font-normal text-[#6A6F73] truncate dark:text-white">
+                      00:52
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-5 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course5.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-32">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  C Programming Bootcamp - The Complete C Language Course
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  C Programming 2023: Master the Fundamentals of C Programming
-                  Language. Join the
-                  <br />Comprehensive C Bootcamp Masterclass!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Vlad Budnitski
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    396 lectures
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+          <!-- h2 -->
+          <h2 id="accordion-collapse-heading-2">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+              aria-controls="accordion-collapse-body-2">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3 md:h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 2 - Beginner - Understanding Data Types and
+                  How to
+                  Manipulate Strings</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-6 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course6.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-52">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  Understanding TypeScript
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  Boost your JavaScript projects with TypeScript: Learn all
-                  about core types,
-                  <br />generics, TypeScript + React or Node & more!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Maximilian Schwarzmüller
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    198 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">10 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2"></div>
+          <!-- h3 -->
+          <h2 id="accordion-collapse-heading-3">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+              aria-controls="accordion-collapse-body-3">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3 md:h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 3 - Beginner - Control Flow and Logical
+                  Operators</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-7 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course7.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-44">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  JavaScript: Understanding the Weird Parts
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  An advanced JavaScript course for everyone! Scope, closures,
-                  prototypes, 'this',
-                  <br />build your own framework, and more.
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  MAnthony Alicea
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    89 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">13 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3"></div>
+          <!-- h4 -->
+          <h2 id="accordion-collapse-heading-4">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+              aria-controls="accordion-collapse-body-4">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3 md:h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 4 - Beginner - Randomisation and Python
+                  Lists</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-8 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course8.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-52">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  Modern JavaScript From The Beginning 2.0 - 2023 Revamp
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  A 36-hour master course to take you from beginner to advanced
-                  JavaScript
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Brad Traversy
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    265 lectures
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">9 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4"></div>
+          <!-- h5 -->
+          <h2 id="accordion-collapse-heading-5">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+              aria-controls="accordion-collapse-body-5">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3 md:h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 5 - Beginner - Python Loops</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-9 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course9.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-48">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  The Web Developer Bootcamp 2024
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  10 Hours of React just added. Become a Developer With ONE
-                  course - HTML,
-                  <br />CSS, JavaScript, React, Node, MongoDB and More!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Colt Steele
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    723 lessons
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">9 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-5" class="hidden" aria-labelledby="accordion-collapse-heading-5"></div>
+          <!-- h6 -->
+          <h2 id="accordion-collapse-heading-6">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-6" aria-expanded="false"
+              aria-controls="accordion-collapse-body-6">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3w-2 md:w-3 md:h-3 rotate-180 shrink-0"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 6 - Beginner - Python Functions &
+                  Karel</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-10 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course10.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-32">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  PHP for Beginners - Become a PHP Master - CMS Project
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  PHP for Beginners: learn everything you need to become a
-                  professional PHP developer
-                  <br />with practical exercises & projects.
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Edwin Diaz, Coding Faculty Solutions
-                </p>
-                <ul class="flex list-disc gap-6 pt-4 lg:pt-8">
-                  <p
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    37 total hours
-                  </p>
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    336 lectures
-                  </li>
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    All Levels
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">9 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-6" class="hidden" aria-labelledby="accordion-collapse-heading-6"></div>
+          <!-- h7 -->
+          <h2 id="accordion-collapse-heading-7">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-7" aria-expanded="false"
+              aria-controls="accordion-collapse-body-7">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3w-2 md:w-3 md:h-3 rotate-180 shrink-0"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 7 - Beginner - Hangman</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-11 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course11.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-40">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  Java Course for Complete Beginners with Practical Examples
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  Learn Java programming through examples for absolute beginner
-                  ! Become a Java
-                  <br />Developer and obtain core Java skills!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Sandor Szekeres
-                </p>
-                <ul class="flex list-disc gap-6 pt-4 lg:pt-8">
-                  <p
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    28.5 total hours
-                  </p>
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    263 lectures
-                  </li>
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    Beginner
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">13 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-7" class="hidden" aria-labelledby="accordion-collapse-heading-7"></div>
+          <!-- h8 -->
+          <h2 id="accordion-collapse-heading-8">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-8" aria-expanded="false"
+              aria-controls="accordion-collapse-body-8">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3w-2 md:w-3 md:h-3 rotate-180 shrink-0"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 8 - Beginner - Function Parameters & Caesar
+                  Cipher</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
-          <!-- course-12 -->
-          <div class="flex gap-5 pl-3 lg:pl-32">
-            <div>
-              <img
-                class="w-48 md:w-56 lg:w-full"
-                src="./images/course12.jpg"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between gap-5 md:gap-20 lg:gap-36">
-              <div>
-                <h3
-                  class="font-bold text-sm md:text-base text-black dark:text-white"
-                >
-                  The Complete Java Development Bootcamp
-                </h3>
-                <p
-                  class="font-normal text-xs md:text-sm text-black dark:text-white"
-                >
-                  Become an Experienced Java Developer with Just One Course.
-                  Fully Updated with 100+
-                  <br />Coding Challenges!
-                </p>
-                <p
-                  class="font-normal pt-px text-xs text-[#6A6F73] dark:text-slate-50"
-                >
-                  Rayan Slim
-                </p>
-                <ul class="list-disc pl-4 pt-4 lg:pt-8">
-                  <li
-                    class="font-normal text-xs text-[#6A6F73] dark:text-slate-50"
-                  >
-                    475 lectures
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div
-                  class="flex gap-0 md:gap-1 justify-center items-center border border-black dark:border-white rounded-full py-1 px-2"
-                >
-                  <h3
-                    class="font-bold text-xs md:text-sm lg:text-base text-black dark:text-white"
-                  >
-                    100
-                  </h3>
-                  <img class="w-3 lg:w-4" src="./images/money2.svg" alt="" />
+              <p class="font-normal text-xs md:text-sm">10 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-8" class="hidden" aria-labelledby="accordion-collapse-heading-8"></div>
+          <!-- h9 -->
+          <h2 id="accordion-collapse-heading-9">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-9" aria-expanded="false"
+              aria-controls="accordion-collapse-body-9">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3w-2 md:w-3 md:h-3 rotate-180 shrink-0"
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
                 </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 9 - Beginner - Dictionaries, Nesting and the
+                  Secret
+                  Auction</span>
               </div>
-            </div>
-          </div>
-          <!-- hr -->
-          <hr
-            class="h-px my-6 ml-3 lg:ml-32 bg-[#D1D7DC] border-0 dark:bg-gray-700"
-          />
+              <p class="font-normal text-xs md:text-sm">8 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-9" class="hidden" aria-labelledby="accordion-collapse-heading-9"></div>
+          <!-- h10 -->
+          <h2 id="accordion-collapse-heading-10">
+            <button type="button"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-0 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 bg-[#F7F9FA] hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              data-accordion-target="#accordion-collapse-body-10" aria-expanded="false"
+              aria-controls="accordion-collapse-body-10">
+              <div class="flex items-start gap-3 w-2/3">
+                <div class="pt-2">
+                  <svg data-accordion-icon class="w-2 h-2 md:w-3 md:h-3 rotate-180 shrink-0" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5 5 1 1 5" />
+                  </svg>
+                </div>
+                <span class="font-bold text-sm md:text-base text-start">Day 10 - Beginner - Functions with
+                  Outputs</span>
+              </div>
+              <p class="font-normal text-xs md:text-sm">10 lectures</p>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-10" class="hidden" aria-labelledby="accordion-collapse-heading-10"></div>
         </div>
       </section>
-      <section class="container mx-auto">
-        <div class="flex justify-center items-center gap-10 pb-16">
-          <button
-            class="w-5 h-5 border border-black rounded-full p-4 flex items-center justify-center"
-          >
-            <i class="fa-solid fa-angle-left"></i>
-          </button>
-          <div
-            class="border-b border-black p-2 w-3 grid justify-center items-center"
-          >
-            <h3 class="font-bold text-sm text-black dark:text-white">1</h3>
+      <!-- requirement -->
+      <section class="px-3 md:px-8 lg:px-40 xl:p-0 ml-0 xl:ml-20 mt-16 xl:mt-16">
+        <h3 class="font-bold text-xl md:text-2xl text-black dark:text-white">
+          Requirements
+        </h3>
+        <ul class="list-disc font-normal text-sm text-black dark:text-white p-5 space-y-2">
+          <li>
+            No programming experience needed - I'll teach you everything you
+            need to know
+          </li>
+          <li>A Mac or PC computer with access to the internet</li>
+          <li>
+            No paid software required - I'll teach you how to use PyCharm,
+            Jupyter Notebooks and Google Colab
+          </li>
+          <li>
+            I'll walk you through, step-by-step how to get all the software
+            installed and set up
+          </li>
+        </ul>
+      </section>
+      <!-- Instructor -->
+      <section class="px-3 md:px-8 lg:px-40 xl:p-0 ml-0 xl:ml-20 mt-16 xl:mt-16">
+        <h3 class="font-bold text-xl md:text-2xl text-black dark:text-white">
+          Instructor
+        </h3>
+        <h3 class="font-bold text-lg md:text-xl text-[#5624D0] underline mt-5 mb-2">
+          Dr. Angela Yu
+        </h3>
+        <div class="flex gap-5">
+          <img src="./images/profile.png" alt="" />
+          <div>
+            <div class="flex gap-3">
+              <img src="./images/people.svg" alt="" />
+              <h3 class="font-normal text-sm text-black dark:text-white">
+                2,519,153 Students
+              </h3>
+            </div>
+            <div class="flex gap-3">
+              <img src="./images/playBtn.svg" alt="" />
+              <h3 class="font-normal text-sm text-black dark:text-white">
+                7 Courses
+              </h3>
+            </div>
           </div>
-          <button
-            class="w-5 h-5 border border-black rounded-full p-4 flex items-center justify-center"
-          >
-            <i class="fa-solid fa-angle-right"></i>
-          </button>
+        </div>
+        <p class="w-full xl:w-3/5 font-normal text-xs md:text-sm text-black dark:text-white mt-3">
+          I'm Angela, I'm a developer with a passion for teaching. I'm the
+          <span class="font-bold">lead instructor</span> at the London App
+          Brewery, London's leading
+          <span class="font-bold">Programming Bootcamp</span>. I've helped
+          hundreds of thousands of students learn to code and change their lives
+          by becoming a developer. I've been invited by companies such as
+          Twitter, Facebook and Google to teach their employees.
+        </p>
+        <p class="w-full xl:w-3/5 font-normal text-xs md:text-sm text-black dark:text-white mt-2">
+          My first foray into programming was when I was just 12 years old,
+          wanting to build my own Space Invader game. Since then, I've made
+          <span class="font-bold">hundred of websites, apps and games</span>.
+          But most importantly, I realised that my
+          <span class="font-bold">greatest passion</span> is teaching.
+        </p>
+      </section>
+      <!-- More Courses -->
+      <section class="w-full xl:w-3/5 px-3 md:px-8 lg:px-40 xl:p-0 ml-0 xl:ml-20 mt-16 xl:mt-16 mb-10">
+        <h3 class="font-bold text-xl md:text-2xl text-black dark:text-white">
+          More Courses by <span class="text-[#5624D0]">Dr. Angela Yu</span>
+        </h3>
+        <div class="grid grid-cols-3 gap-4 md:gap-8 mt-5">
+          <div class="">
+            <img class="mb-3" src="./images/flutter.jpg" alt="" />
+            <div class="space-y-2">
+              <h3 class="font-bold text-sm md:text-base text-black dark:text-white">
+                The Complete 2024 Web Development Bootcamp
+              </h3>
+              <p class="font-normal text-xs text-[#6A6F73] dark:text-gray-100">
+                Dr. Angela Yu
+              </p>
+              <p class="font-normal text-xs text-[#6A6F73] dark:text-gray-100">
+                ●375 lectures
+              </p>
+              <p class="font-bold text-sm md:text-base text-black dark:text-white">
+                $74.99
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <img class="mb-3" src="./images/ios.jpg" alt="" />
+            <div class="space-y-2">
+              <h3 class="font-bold text-sm md:text-base text-black dark:text-white">
+                iOS & Swift - The Complete iOS App Development…
+              </h3>
+              <p class="font-normal text-xs text-[#6A6F73] dark:text-gray-100">
+                Dr. Angela Yu
+              </p>
+              <p class="font-normal text-xs text-[#6A6F73] dark:text-gray-100">
+                60.5 total hours ●542 lectures ●All Levels
+              </p>
+              <p class="font-bold text-sm md:text-base text-black dark:text-white">
+                $74.99
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <img class="mb-3" src="./images/bootcamp.jpg" alt="" />
+            <div class="space-y-2">
+              <h3 class="font-bold text-sm md:text-base text-black dark:text-white">
+                The Complete Flutter Development Bootcamp wi…
+              </h3>
+              <p class="font-normal text-xs text-[#6A6F73] dark:text-gray-100">
+                Dr. Angela Yu
+              </p>
+              <p class="font-normal text-xs text-[#6A6F73] dark:text-gray-100">
+                ●217 lectures
+              </p>
+              <p class="font-bold text-sm md:text-base text-black dark:text-white">
+                $74.99
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
     <!-- footer -->
 
-    <div class="bg-[#1C1D1F]">
+    <div class="bg-[#1D2A35]">
       <footer class="container mx-auto px-20 py-12">
         <div class="md:flex flex-col lg:flex-row gap-10 lg:gap-40">
           <div class="mb-6 md:mb-0">
             <a href="#" target="_blank" class="flex items-center">
-              <img
-                src="./images/elpLogo.png"
-                class="mr-4 h-10"
-                alt="FlowBite Logo"
-              />
+              <img src="./images/elpLogo.png" class="mr-3 w-14" alt="Logo" />
               <span
-                class="self-center text-xl font-semibold whitespace-nowrap text-[#FFF4A3] pl-10"
-                >NEWSLETTER</span
-              >
+                class="self-center text-xl font-normal whitespace-nowrap text-[#FFF4A3] pl-5 md:pl-10">NEWSLETTER</span>
             </a>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-40">
+          <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-10 lg:gap-40">
             <div>
               <h3 class="mb-5 text-lg font-normal text-[#DDDDDD]">
                 Top Tutorials
               </h3>
               <ul>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-[#DDDDDD] hover:underline text-xs font-normal"
-                    >C Tutorial
+                <li class="mb-0.5">
+                  <a href="#" target="_blank" class="text-[#DDDDDD] hover:underline text-xs font-normal">C Tutorial
                   </a>
                 </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-[#DDDDDD] hover:underline text-xs font-normal"
-                    >JavaScript Tutorial
+                <li class="mb-1">
+                  <a href="#" target="_blank" class="text-[#DDDDDD] hover:underline text-xs font-normal">JavaScript
+                    Tutorial
                   </a>
                 </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-[#DDDDDD] hover:underline text-xs font-normal"
-                    >SQL Tutorial
+                <li class="mb-0.5">
+                  <a href="#" target="_blank" class="text-[#DDDDDD] hover:underline text-xs font-normal">SQL Tutorial
                   </a>
                 </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-[#DDDDDD] hover:underline text-xs font-normal"
-                    >Python Tutorial
+                <li class="mb-0.5">
+                  <a href="#" target="_blank" class="text-[#DDDDDD] hover:underline text-xs font-normal">Python Tutorial
                   </a>
                 </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-[#DDDDDD] hover:underline text-xs font-normal"
-                    >PHP Tutorial
+                <li class="mb-0.5">
+                  <a href="#" target="_blank" class="text-[#DDDDDD] hover:underline text-xs font-normal">PHP Tutorial
                   </a>
                 </li>
-                <li class="mb-2">
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="text-[#DDDDDD] hover:underline text-xs font-normal"
-                    >Java Tutorial</a
-                  >
+                <li class="mb-0.5">
+                  <a href="#" target="_blank" class="text-[#DDDDDD] hover:underline text-xs font-normal">Java
+                    Tutorial</a>
                 </li>
               </ul>
             </div>
 
-            <div
-              class="col-span-2 flex flex-wrap mt-4 space-x-6 items-center justify-center sm:mt-0"
-            >
-              <a
-                href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  fill="white"
-                  aria-hidden="true"
-                  viewBox="0 0 448 512"
-                >
+            <div class="col-span-2 flex flex-wrap mt-4 space-x-6 items-center justify-center sm:mt-0 gap-3 md:gap-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" aria-hidden="true"
+                  viewBox="0 0 448 512">
                   <path
-                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
-                  />
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                 <img src="./images/Icon.svg" alt="" />
               </a>
-              <a
-                href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  fill="white"
-                  aria-hidden="true"
-                  viewBox="0 0 448 512"
-                >
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" aria-hidden="true"
+                  viewBox="0 0 448 512">
                   <path
-                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                  />
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  fill="white"
-                  aria-hidden="true"
-                  viewBox="0 0 448 512"
-                >
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="white" aria-hidden="true"
+                  viewBox="0 0 448 512">
                   <path
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  />
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                 </svg>
               </a>
-              <a href="#" class="text-[#DDDDDD] font-medium text-base">
+              <a href="#" class="text-[#DDDDDD] font-normal text-base">
                 FORUM
               </a>
 
-              <a href="#" class="text-[#DDDDDD] font-medium text-base">
+              <a href="#" class="text-[#DDDDDD] font-normal text-base">
                 ABOUT
               </a>
             </div>
           </div>
         </div>
       </footer>
+      <h3 class="font-normal text-xs text-white py-6 px-10 lg:px-20">
+        © 2024 ELC, Inc.
+      </h3>
     </div>
   </body>
+
 </html>
